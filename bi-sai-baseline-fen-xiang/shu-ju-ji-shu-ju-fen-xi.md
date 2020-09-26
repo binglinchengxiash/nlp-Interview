@@ -6,7 +6,7 @@
 
 source="data\_train.tsv" host="iZ2ze5v7m532iod14ldw49Z" sourcetype="tsv" \| stats count\(text\) as turn by sid \| stats count\(sid\)  by turn \| sort +turn
 
-![&#x5BF9;&#x8BDD;&#x8F6E;&#x6570;-&#x5BF9;&#x8BDD;session&#x6570;](../.gitbook/assets/image%20%2818%29.png)
+![&#x5BF9;&#x8BDD;&#x8F6E;&#x6570;-&#x5BF9;&#x8BDD;session&#x6570;](../.gitbook/assets/image%20%2820%29.png)
 
 可以知道大部分数据的对话session为30轮以下。
 
@@ -14,7 +14,7 @@
 
 source="data\_train.tsv" host="iZ2ze5v7m532iod14ldw49Z" sourcetype="tsv" \| eval length =  len\(text\) \| stats count\(text\)  by length \| sort +length
 
-![&#x53E5;&#x5B50;&#x957F;&#x5EA6;-&#x53E5;&#x5B50;&#x6570;](../.gitbook/assets/image%20%2821%29.png)
+![&#x53E5;&#x5B50;&#x957F;&#x5EA6;-&#x53E5;&#x5B50;&#x6570;](../.gitbook/assets/image%20%2825%29.png)
 
 **3.**   **图片问句：**
 
@@ -34,11 +34,11 @@ source="data\_train.tsv" host="iZ2ze5v7m532iod14ldw49Z" sourcetype="tsv" \| sear
 
 脱敏信息：
 
-![&#x8131;&#x654F;&#x4FE1;&#x606F;](../.gitbook/assets/image%20%2815%29.png)
+![&#x8131;&#x654F;&#x4FE1;&#x606F;](../.gitbook/assets/image%20%2817%29.png)
 
 无脱敏表情：
 
-![&#x65E0;&#x8131;&#x654F;&#x8868;&#x60C5;](../.gitbook/assets/image%20%2813%29.png)
+![&#x65E0;&#x8131;&#x654F;&#x8868;&#x60C5;](../.gitbook/assets/image%20%2814%29.png)
 
 url链接：&lt;url&gt;
 
